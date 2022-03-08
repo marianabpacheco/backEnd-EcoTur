@@ -1,1 +1,1 @@
-web: java -jar target/ecoturg7.jar
+web: java -jar target/backend.jar
