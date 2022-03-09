@@ -1,7 +1,6 @@
 package com.dhecotur.model;
 
 import lombok.*;
-
 import javax.persistence.*;
 
 @Data
@@ -9,18 +8,19 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
+@Table(name = "tb_category")
 public class Category {
 
     @Id
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private Long id;
-    private String titulo;
+    private String title;
     @Lob
-    private String descricao, url;
+    private String description, url;
 
     public Category(String titulo, String descricao, String url) {
-        this.titulo = titulo;
-        this.descricao = descricao;
+        this.title = titulo;
+        this.description = descricao;
         this.url = url;
     }
 
@@ -30,8 +30,8 @@ public class Category {
     public String toString() {
         return "Categorias{" +
                 "id=" + id +
-                ", titulo='" + titulo + '\'' +
-                ", descricao='" + descricao + '\'' +
+                ", titulo='" + title + '\'' +
+                ", descricao='" + description + '\'' +
                 ", url='" + url + '\'' +
                 '}';
     }

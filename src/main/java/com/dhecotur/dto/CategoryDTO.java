@@ -7,13 +7,13 @@ import lombok.Data;
 public class CategoryDTO {
 
     private Long id;
-    private String titulo, descricao, url;
+    private String title, description, url;
 
-    public static CategoryDTO categoriasDTO(Category category) {
+    public static CategoryDTO categoryDTO(Category category) {
         CategoryDTO cat = new CategoryDTO();
         cat.setId(category.getId());
-        cat.setTitulo(category.getTitulo());
-        cat.setDescricao(category.getDescricao());
+        cat.setTitle(category.getTitle());
+        cat.setDescription(category.getDescription());
         cat.setUrl(category.getUrl());
         return cat;
     }

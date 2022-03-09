@@ -21,7 +21,7 @@ public class CategoryController {
     @GetMapping
     public ResponseEntity<List<CategoryDTO>> findAll(){
         return ResponseEntity.ok(
-                service.findAll().stream().map( CategoryDTO::categoriasDTO).collect(Collectors.toList())
+                service.findAll().stream().map( CategoryDTO::categoryDTO).collect(Collectors.toList())
         );
     }
 
