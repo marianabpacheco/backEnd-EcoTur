@@ -24,14 +24,12 @@ public class Category {
         this.url = url;
     }
 
-
-
     @Override
     public String toString() {
-        return "Categorias{" +
+        return "Category{" +
                 "id=" + id +
-                ", titulo='" + title + '\'' +
-                ", descricao='" + description + '\'' +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
                 ", url='" + url + '\'' +
                 '}';
     }
